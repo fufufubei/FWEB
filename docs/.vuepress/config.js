@@ -2,6 +2,8 @@ module.exports={
     base:'/FWEB/',
     title:'FB',
     descripiton:'积累',
+    host:'192.168.6.120',
+    port:'1000',
     themeConfig:{
         logo:'./public/images/icon1.png',
         repo:'https://github.com/fufufubei/FWEB',
@@ -37,21 +39,31 @@ module.exports={
                 ]
             },
             {
-                text:'小技巧',link:'/sec/one'
+                text:'JS/CSS',
+                items:[
+                    {
+                        text:"JS",
+                        link:"/Basis/JS.md"
+                    },
+                    {
+                        text:"CSS",
+                        link:"/Basis/CSS.md"
+                    },
+                ]
             },
            
         ],
+        sidebar:'auto',
         // sidebar:{
+        //     '/Frame/':['','/Vue','/React'],
+        //     '/MiniProject/':['weixin','baidu'],
+        //     '/Basis/':['JS','CSS'],
         //     '/':[
-        //         'one',
-        //         'two'
-        //     ],
-        //     '/sec/':[
-        //         'one'
+        //         '',
+        //         'contact',
+        //         'about'
         //     ]
         // },
-        // sidebar:[['/one','GoOne'],['/two','GoTwo'],['/sec/one','GoSec']],
-        sidebar:'auto',
         lastUpdated:'Last Updated'
     },
     plugins: [
