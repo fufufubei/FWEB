@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "gh-pages -d dist",
+    "deploy": "bash deploy.sh",
     "deploy:build": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
@@ -15,9 +15,13 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "vuepress": "^0.14.8"
+    "less-loader": "^5.0.0",
+    "node-less": "^1.0.0",
+    "sass-loader": "^8.0.0",
+    "vuepress": "^1.2.0"
   },
   "dependencies": {
-    "git": "^0.1.5"
+    "git": "^0.1.5",
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
