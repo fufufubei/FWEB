@@ -1,5 +1,5 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: 自动打包
+heroText: 自动打包.
 ---
