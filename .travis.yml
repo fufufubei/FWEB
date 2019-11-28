@@ -4,7 +4,7 @@ node_js:
 install:
   - npm ci
 script:
-  - yarn build
+  - ./deploy.sh
 deploy:
 provider: pages
 skip-cleanup: true
