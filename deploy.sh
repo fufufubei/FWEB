@@ -4,7 +4,8 @@ set -e
 yarn build
 
 #导航栏构建输出目录
-cd docs/.vuepress/dist
+# cd docs/.vuepress/dist
+cd dist
 
 git init
 

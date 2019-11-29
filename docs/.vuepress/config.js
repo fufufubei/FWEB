@@ -4,6 +4,7 @@ module.exports={
     descripiton:'积累',
     host:'192.168.6.120',
     port:'1000',
+    dest: 'dist',
     themeConfig:{
         logo:'./public/images/icon1.png',
         repo:'https://github.com/fufufubei/FWEB',
