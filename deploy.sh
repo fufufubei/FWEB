@@ -12,6 +12,6 @@ git add -A
 
 git commit -m 'deploy'
 
-git push -f git@github.com:fufufubei/FWEB.git master:gh-pages
-# git push -f https://${access_token}@github.com:fufufubei/FWEB.git master:gh-pages
+# git push -f git@github.com:fufufubei/FWEB.git master:gh-pages
+git push -f https://${access_token}@github.com:fufufubei/FWEB.git master:gh-pages
 cd -
