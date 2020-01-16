@@ -43,12 +43,16 @@ module.exports={
                 items:[
                     {
                         text:"JS",
-                        link:"/Basis/JS.md"
+                        link:"/Basis/JS/JS.md"
                     },
                     {
                         text:"CSS",
-                        link:"/Basis/CSS.md"
+                        link:"/Basis/CSS/CSS.md"
                     },
+                    {
+                        text:"Plugin",
+                        link:"/Basis/Plugin/html2canvas.md"
+                    }
                 ]
             },
            
