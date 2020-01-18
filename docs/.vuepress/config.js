@@ -5,7 +5,7 @@ module.exports={
     host:'192.168.6.120',
     port:'1000',
     themeConfig:{
-        logo:'./public/images/icon1.png',
+        logo:'/images/logo.jpg',
         repo:'https://github.com/fufufubei/FWEB',
         base:'/FWEB/',
         nav:[

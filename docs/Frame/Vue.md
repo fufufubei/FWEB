@@ -1,4 +1,5 @@
-- **proxy跨域设置**
+# VUE碎知识
+## proxy跨域设置
 > vue.config.js中可以设置代理，处理跨域,可以设置多个代理。
 ```js
 module.exports = {
