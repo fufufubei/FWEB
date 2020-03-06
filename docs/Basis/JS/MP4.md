@@ -4,7 +4,7 @@
 官方文档上说：video标签支持MP4,WebM,Ogg格式，**MP4= 带有H.264视频编码和AAC音频编码的MPEG4文件**。
 
 
-![示例图片](/FWEB/images/mp4-2.png))
+![示例图片](/FWEB/images/mp4-2.png)
 
 
 ### 修改编码方式（格式工厂）

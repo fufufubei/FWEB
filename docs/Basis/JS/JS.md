@@ -7,7 +7,7 @@ JavaScript 浮点数运算时经常遇到会 0.000000001 和 0.999999999 这样�
     parseFloat(num.toPrecision(precision))
 ```
 
-## IE，安卓5.0一下版本promise未定义问题
+## IE，安卓5.0以下版本promise未定义问题
 **解决方案：**
 ```js
 npm install --save-dev babel-polyfill
