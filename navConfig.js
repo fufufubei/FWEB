@@ -45,5 +45,13 @@ module.exports =[
             }
         ]
     },
+    {
+        text:'学习',
+        items:[
+            {text:'计划',link:'/Study/plne.md'},
+            {text:'总结',link:'/Study/summary.md'},
+            {text:'git',link:'/Study/git.md'},
+        ]
+    }
 ]
        
