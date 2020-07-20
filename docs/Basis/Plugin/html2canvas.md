@@ -22,17 +22,17 @@ html2canvas(dom).then((canvas)=>{
 });
 ```
 
-### 拓展
-- Q1：一般页面展示的和想要生成的海报可能不太一样，比如：
+### 拓展-常见问题
+- **Q1：一般页面展示的和想要生成的海报可能不太一样，比如：**
 ![]()
 
     A1：实现方案：分别两个div，div1用来页面展示，div2用来绘制canvas生成图片。
 
-- Q2：生成的图片模糊。
+- **Q2：生成的图片模糊。**
 
     A2：涉及到图片的不要用background，将图片放到img标签内，使用定位放到对应位置。
 
-- Q3：生成的图片有白边。
+- **Q3：生成的图片有白边。**
 
     A3：通过html2canvas参数设置canvas的宽高，及背景色。
 ```javascript
@@ -45,7 +45,7 @@ html2canvas(document.querySelector("#canvas-dom"),{
 }).then((canvas)=>{})
 ```
 
-- Q4: 如果生成的内容包含的有线上图片，会遇到跨域问题。
+- **Q4: 如果生成的内容包含的有线上图片，会遇到跨域问题。**
     
     A4：html2canvas有几个参数设置跨域
     ```javascript
@@ -67,7 +67,7 @@ html2canvas(document.querySelector("#canvas-dom"),{
         });
     ```
 
-- Q5：canvas绘制时不能使用线上图片，可以先将图片转换成base64或者blob
+- **Q5：canvas绘制时不能使用线上图片，可以先将图片转换成base64或者blob**
 
     A5：本来使用的是XMLHttpRequest,在安卓手机上不支持。最后换用了canvas转。**还有一种情况将图片使用以下方法装换的时候，一直报跨域。最后是运维将站点进行设置允许跨域。**
     ```javascript

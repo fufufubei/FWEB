@@ -1,3 +1,6 @@
+let fs = require('fs');
+console.log('11111111',fs)
+
 module.exports =[
     {
         text:'首页',link:'/'
@@ -41,7 +44,16 @@ module.exports =[
             },
             {
                 text:"Plugin",
-                link:"/Basis/Plugin/html2canvas.md"
+                items:[
+                    {
+                        text:"html2canvas",
+                        link:"/Basis/Plugin/html2canvas.md"
+                    },
+                    {
+                        text:"vue-awesome-swiper",
+                        link:"/Basis/Plugin/vueAwesomeSwiper.md"
+                    },
+                ]
             }
         ]
     },

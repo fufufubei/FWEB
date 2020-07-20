@@ -1,5 +1,5 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: travis1
+heroText: 积少成多
 ---
