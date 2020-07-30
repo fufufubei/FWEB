@@ -1,7 +1,7 @@
 {
-    "name": "FBWEB",
-    "version": "1.0.3",
-    "main": "index.js",
+  "name": "FBWEB",
+  "version": "1.0.3",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "git": "^0.1.5",
+    "ora": "^4.0.5",
     "vuepress-plugin-cat": "^1.0.3"
   }
 }

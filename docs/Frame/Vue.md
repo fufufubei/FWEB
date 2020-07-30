@@ -97,3 +97,37 @@ router.beforeEach((to,from,next)=>{
  next()  
 })  
 ```
+## keep-alive
+这是keepalive可以使页面记住缓存，返回页面时保留数据，符合大多提交资料得项目需求。
+但是keepalive:true也有很多的坑：
+### 页面只触发一次mounted，
+重新入页面也不会触发，除非是刷新页面。
+activated每次进入页面都会触发，可以配合使用beforeRouteEnter进行使用。
+
+### 嵌套路由keep-alive:true 失效
+当页面是多级嵌套路由，路由a设置了keepalive，路由b没有设置keepalive，a跳转b时会导致keep-alive失效。因此使用keep-alive要使用一级路由。
+或者在router里将要跳转的页面配置多个路由，放到与a同一层级下。
+```javascript
+{
+    path:'/A',
+    component:A,
+    meta:{
+        keepAlive:true
+    }
+},
+{
+    path:'/order',
+    component:Order,
+    children:[
+        {
+            path:'/B',
+            component:B,
+        }
+    ]
+},
+{
+    path:'/B1',
+    component:B,
+}
+
+```
