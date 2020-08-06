@@ -1,5 +1,3 @@
-let fs = require('fs');
-console.log('11111111',fs)
 
 module.exports =[
     {
@@ -16,6 +14,10 @@ module.exports =[
                 text:'React',
                 link:'/Frame/React.md'
             },
+            {
+                text:'README',
+                link:'/Frame/'
+            }
         ],
     },
     {

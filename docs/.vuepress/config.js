@@ -1,4 +1,5 @@
 const NavConfig =require( '../../navConfig');
+const {list} = require('../../dir')
 module.exports={
     base:'/FWEB/',
     title:'FB',
@@ -9,7 +10,7 @@ module.exports={
         logo:'/images/logo.jpg',
         repo:'https://github.com/fufufubei/FWEB',
         base:'/FWEB/',
-        nav:NavConfig,
+        nav:list,
         sidebar:'auto',
         lastUpdated:'Last Updated'
     },
