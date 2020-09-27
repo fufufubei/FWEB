@@ -1,4 +1,4 @@
-const NavConfig =require( '../../navConfig');
+// const NavConfig =require( '../../navConfig');
 const {list} = require('../../dir')
 module.exports={
     base:'/FWEB/',
@@ -15,13 +15,7 @@ module.exports={
         lastUpdated:'Last Updated'
     },
     displayAllHeaders:true,
-    // sidebar: [
-    //     {
-    //          title:'',
-
-    //     },
-
-    // ],
+    // sidebar: "auto",
     sidebar:"auto",
     plugins: [
         "vuepress-plugin-cat",

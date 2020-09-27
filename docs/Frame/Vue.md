@@ -131,3 +131,51 @@ activated每次进入页面都会触发，可以配合使用beforeRouteEnter进�
 }
 
 ```
+
+##防抖和节流
+### 防抖（debounce）
+触发高频事件后 n 秒内函数只会执行一次，如果 n 秒内高频事件再次被触发，则重新计算时间
+常用场景：输入时进行检索，当用户输入无操作多少ms之后再请求接口，渲染请求结果
+
+使用lodash实现
+[官方链接](https://www.lodashjs.com/docs/lodash.debounce)
+```vue
+<template>
+<div class="page">
+<input type='text' @input="inpTxt" />
+</div>
+</template>
+<script>
+import _ from 'lodash';
+export default{
+    data:()=>{
+        return{
+
+        }
+    },
+    methods:{
+        inpTxt(e){
+            this.inpVal=e.val.replace(/[^\d]/ig,'')
+            // inpVal do something
+            ...
+            //请求检索
+            this.getData();
+        },
+        getData:_.debounce(function(){
+           ajax.get();
+        },600,{
+            leading:false
+        }),
+
+    }
+}
+</script>
+```
+
+### 节流（thorttle）
+高频事件触发，但在 n 秒内只会执行一次，所以节流会稀释函数的执行频率
+
+常用场景：抢购页面，点击购买按钮，点击之后在固定时间内点击其实是无效的，点击之后超过一定时间点击才能触发。
+
+### 区别
+防抖动是将多次执行变为最后一次执行，节流是将多次执行变成每隔一段时间执行。
